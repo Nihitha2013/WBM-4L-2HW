@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Area of Shapes</title>
+</head>
+<body>
+    <center><h1 style="color:orange">Area of Shapes</h1>
+    <div class="container" style="background-color: palevioletred;">
+    <h1>Square</h1>
+    
+    <label>Side: </label>
+    <input type="number" id="square_1"><br><br>
+    <button onclick="square()" style="color: blue; background-color: palegreen;">Click Me</button><br><br><br>
+    <img src="square.png" alt="" width="150"><br><br>
+    <p id="result" style="color: red; font-size: 40px;">   </p>
+    </div>
+
+    <div class="container" style="background-color: rgb(0, 174, 255);">
+    <h1>Rectangle</h1>
+    
+    <label>Length: </label>
+    <input type="number" id="rectangle_1"><br><br>
+    <label>Breadth: </label>
+    <input type="number" id="rectangle_2"><br><br>
+    <button onclick="rectangle()" style="color: blue; background-color: palegreen;">Click Me</button><br><br><br>
+    <img src="rectangle.png" alt="" width="150"><br><br>
+    <p id="result_1" style="color: red; font-size: 40px;">   </p>
+    </div>
+
+    <div class="container" style="background-color: yellow;">
+    <h1>Circle</h1>
+    
+    <label>Radius: </label>
+    <input type="number" id="circle_1"><br><br>
+    
+    <button onclick="circle()" style="color: blue; background-color: palegreen;">Click Me</button><br><br><br>
+    <img src="circle.png" alt="" width="150"><br><br>
+    <p id="result_2" style="color: red; font-size: 40px;">   </p>
+    </div>
+
+    <div class="container" style="background-color: orange;">
+    <h1>Parallelogram</h1>
+    
+    <label>Length: </label>
+    <input type="number" id="parallelogram_1"><br><br>
+    <label>Breadth: </label>
+    <input type="number" id="parallelogram_2"><br><br>
+    <button onclick="parallelogram()" style="color: blue; background-color: palegreen;">Click Me</button><br><br><br>
+    <img src="parallelogram.png" alt="" width="150"><br><br>
+    <p id="result_3" style="color: aqua; font-size: 40px;">   </p>
+    </div>
+    </center>
+
+
+
+    <script>
+        function square(){
+        var number=Number(document.getElementById("square_1").value);
+        var area=number * number
+        document.getElementById("result").innerHTML="Area: "+area;
+        }
+    
+        function rectangle(){
+        var number=Number(document.getElementById("rectangle_1").value)*Number(document.getElementById("rectangle_2").value);
+        
+
+        document.getElementById("result_1").innerHTML="Area: "+number;
+        }
+    
+        function circle(){
+        var number=2*22/7*Number(document.getElementById("circle_1").value);
+
+        document.getElementById("result_2").innerHTML="Area: "+number;
+        }
+    
+        function parallelogram(){
+        var number=Number(document.getElementById("parallelogram_1").value)*Number(document.getElementById("parallelogram_2").value);
+        
+
+        document.getElementById("result_3").innerHTML="Area: "+number;
+        }
+    </script>
+
+    
+</body>
+</html>
